@@ -1,0 +1,13 @@
+keeps for sliding window:-
+
+1) use doubly-ended queue to store index of negative element in a particular window
+2) deque's first element i.e deque.front() will be the one to give us index of negative element always and then it will be popped as we move to next window 
+3) logic to maintain window size:-
+    i-deque.front()> k
+
+//1) always while comparision pop or push from back pop/push.back()
+ 
+//2) after comparison use push/pop.front() only
+    
+//3) also in sliding window condition [i-maxIndex.front()>=k] pop_front should be used 
+to pop index of first window...
